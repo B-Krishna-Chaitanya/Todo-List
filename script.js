@@ -20,6 +20,7 @@ function renderTodoList() {
     deleteButton.addEventListener('click',() => {
       todoList.splice(index,1);
       renderTodoList();
+      saveToStorage();
     })
   });
 }
